@@ -387,4 +387,6 @@ backups/desktop-before-abyss-20261031-190907/
 - NEON GRID / ABYSS 的视频、HUD、切换器均由 `tools/render_assets.py` 程序化生成，无第三方素材；VERMILION 的仪式与静态图背景由运行时/CSS 绘制。
 - VERMILION DAWN 的启动声音是六句真声台词 + 两个界面音效，不含第三方录音，也没有进行曲音轨。
 - VELVET MUSE 不内置任何真实人物照片；`skins/muse/images/` 由使用者自行提供并承担授权责任。
-- 代码 MIT。注入/回退思路受 [dsh-video-skin](https://github.com/Something11235/dsh-video-skin)（MIT）启发，实现为新代码。
+
+## 许可证
+本项目采用 **MIT 许可证** 开源。详见 [LICENSE-MIT](LICENSE-MIT) 文件。
