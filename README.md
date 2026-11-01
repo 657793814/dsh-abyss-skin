@@ -57,15 +57,27 @@
 
 ## 安装到当前桌面版
 
+### 为什么 DSH 启动时会自动加载这个皮肤插件？
+
+DeepSeek Harness 使用 **Cordis 框架**，启动时会自动扫描所有包含 `dsh-plugin` 关键字的 npm 包并加载它们。本插件通过以下配置被自动发现：
+
+- `package.json` 中的 `keywords` 包含 `"dsh-plugin"` 和 `"deepseek-harness"`
+- `dsh.bundle.patch` 指向 `cordis.patch.yml`，注册插件 ID
+- `index.js` 导出 `apply(ctx)` 函数，Cordis 启动时调用它注入皮肤资源
+
+因此只要插件在 `node_modules` 中（无论是 `link:` 还是真实安装），DSH 启动时就会自动加载，无需手动启用。
+
+### 当前安装状态
+
 本机已经以 `link:` 方式装进 `desktop` profile。**注入表是宿主启动时的一次性快照，装完必须完全退出并重新打开 DeepSeek Harness**；刷新页面只会重新读取皮肤清单和背景。
 
 换机器或手动安装（先完全退出 DSH，并备份 `~/.dsh/profiles/desktop`）：
 
 1. 把整个 `dsh-abyss-skin/` 放到稳定路径，例如 `~/Plugins/dsh-abyss-skin`。
 2. 编辑 `~/.dsh/profiles/desktop/package.json`：
-   - `dependencies` 加 `"dsh-abyss-skin": "link:/absolute/path/to/dsh-abyss-skin"`
-   - `dsh.profile.bundles` 加 `"dsh-abyss-skin"`
-   - 移除旧的 `dsh-video-skin`，避免两个启动层打架
+    - `dependencies` 加 `"dsh-abyss-skin": "link:/absolute/path/to/dsh-abyss-skin"`
+    - `dsh.profile.bundles` 加 `"dsh-abyss-skin"`
+    - 移除旧的 `dsh-video-skin`，避免两个启动层打架
 3. 建软链：
    ```bash
    ln -s /absolute/path/to/dsh-abyss-skin ~/.dsh/profiles/desktop/node_modules/dsh-abyss-skin
