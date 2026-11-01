@@ -6,7 +6,7 @@
   "accent": "#f0b7c6",
   "accent2": "#b388ff",
   "boot": {
-    "file": "user-boot.mp4",
+    "file": "boot.mp4",
     "volume": 0.9
   },
   "background": {
@@ -23,5 +23,5 @@
     "title": "VELVET MUSE",
     "subtitle": "PRIVATE GALLERY · PORTRAIT ROTATION"
   },
-  "poster": "user-poster.jpg"
+  "poster": "poster.jpg"
 }
