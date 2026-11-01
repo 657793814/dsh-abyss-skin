@@ -1,0 +1,24 @@
+{
+  "id": "abyss",
+  "name": "ABYSS PROTOCOL",
+  "tagline": "DEEP OCEAN COMPUTE",
+  "description": "深海鲸群 / 全息声呐 / 青紫冷光",
+  "accent": "#5fe8ff",
+  "accent2": "#a78bfa",
+  "boot": {
+    "file": "boot.mp4",
+    "volume": 0.85
+  },
+  "background": {
+    "file": "background.mp4",
+    "veil": 0.18,
+    "surface": 0.26,
+    "sidebar": 0.42,
+    "playbackRate": 0.82
+  },
+  "chrome": {
+    "kicker": "DEEPSEEK HARNESS",
+    "title": "ABYSS PROTOCOL",
+    "subtitle": "NEURAL SHELL · DEEP OCEAN COMPUTE"
+  }
+}

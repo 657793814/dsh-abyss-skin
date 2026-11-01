@@ -1,0 +1,47 @@
+{
+  "name": "dsh-abyss-skin",
+  "version": "1.6.0",
+  "description": "ABYSS + NEON + VERMILION + VELVET MUSE — a multi-skin video / still-image boot and background pack for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "runtime",
+    "cordis.patch.yml",
+    "skins",
+    "abyss-skin.config.example.json",
+    "README.md",
+    "preview",
+    "docs",
+    "LICENSE",
+    "tools",
+    "tests"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "video-skin",
+    "boot-screen",
+    "background",
+    "abyss"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "package": "bash tools/package.sh"
+  }
+}

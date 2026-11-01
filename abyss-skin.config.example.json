@@ -1,0 +1,40 @@
+{
+  "_readme": "Copy to $DSH_HOME/dsh-abyss-skin.json (usually ~/.dsh/dsh-abyss-skin.json). The switcher writes `active` back here. Per-skin overrides go under `skins.<id>`; boot.* changes need a DSH restart, background.* changes apply on the next page load. background.file accepts .mp4 or a still .jpg/.png/.webp.",
+  "active": "neon",
+  "boot": {
+    "sound": true,
+    "volume": 0.85,
+    "fadeMs": 1200,
+    "skipFadeMs": 280,
+    "maxMs": 16000,
+    "hint": "正在接入协议…",
+    "skipLabel": "点击跳过"
+  },
+  "background": {
+    "delayMs": 600
+  },
+  "ui": {
+    "switcher": true
+  },
+  "skins": {
+    "abyss": {
+      "boot": { "volume": 0.85 },
+      "background": { "surface": 0.26, "sidebar": 0.42, "veil": 0.18 }
+    },
+    "neon": {
+      "boot": { "volume": 0.8 },
+      "background": { "surface": 0.24, "sidebar": 0.4, "veil": 0.16 }
+    },
+    "vermilion": {
+      "boot": {
+        "voice": { "enabled": true, "volume": 0.95, "cue": true, "lead": 240 },
+        "sfx": { "enabled": true, "volume": 0.5 }
+      },
+      "background": { "surface": 0.22, "sidebar": 0.38, "veil": 0.62 }
+    },
+    "muse": {
+      "boot": { "volume": 0.65 },
+      "background": { "intervalMs": 12000, "surface": 0.24, "sidebar": 0.4, "veil": 0.16 }
+    }
+  }
+}

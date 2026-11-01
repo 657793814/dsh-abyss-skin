@@ -1,0 +1,24 @@
+{
+  "id": "neon",
+  "name": "NEON GRID",
+  "tagline": "CYBER TUNNEL / 07",
+  "description": "霓虹矩阵 / 数据隧道 / 品红脉冲",
+  "accent": "#ff4df2",
+  "accent2": "#5ffbf1",
+  "boot": {
+    "file": "boot.mp4",
+    "volume": 0.8
+  },
+  "background": {
+    "file": "background.mp4",
+    "veil": 0.16,
+    "surface": 0.24,
+    "sidebar": 0.4,
+    "playbackRate": 0.9
+  },
+  "chrome": {
+    "kicker": "DEEPSEEK HARNESS",
+    "title": "NEON GRID",
+    "subtitle": "CYBER TUNNEL · DATA SOVEREIGN"
+  }
+}

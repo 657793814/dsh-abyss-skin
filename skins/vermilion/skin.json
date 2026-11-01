@@ -1,0 +1,119 @@
+{
+  "id": "vermilion",
+  "name": "VERMILION DAWN",
+  "tagline": "RED HORIZON / 1949",
+  "description": "红色精神 / 人民殿堂 / 五星礼花",
+  "accent": "#ffd166",
+  "accent2": "#e63946",
+  "boot": {
+    "video": false,
+    "hint": "正在点亮人民殿堂…",
+    "skipLabel": "点击跳过",
+    "voice": {
+      "enabled": true,
+      "volume": 0.95,
+      "cue": true,
+      "lead": 240
+    },
+    "sfx": {
+      "enabled": true,
+      "volume": 0.5
+    }
+  },
+  "background": {
+    "file": "poster.jpg",
+    "veil": 0.62,
+    "surface": 0.22,
+    "sidebar": 0.38,
+    "playbackRate": 0.9
+  },
+  "chrome": {
+    "kicker": "DEEPSEEK HARNESS",
+    "title": "VERMILION DAWN",
+    "subtitle": "RED HORIZON · CEREMONIAL HALL"
+  },
+  "rite": {
+    "kicker": "VERMILION DAWN · 赤色档案",
+    "serial": "1949 · 10 · 01",
+    "motto": "自力更生 · 艰苦奋斗",
+    "stamp": "核验通过",
+    "welcome": "山河无恙 · 星火相传",
+    "profile": {
+      "name": "访问者",
+      "serial": "DSH-1949",
+      "level": "全权",
+      "unit": "人民"
+    },
+    "clearance": ["身份核验", "会话许可", "上下文读取", "工具调用"]
+  },
+  "phases": [
+    {
+      "id": "permission",
+      "audio": "line-1",
+      "kind": "permission",
+      "chinese": "需要访问许可",
+      "rail": "需要访问许可",
+      "english": "ACCESS PERMISSION REQUIRED",
+      "note": "本机协议 · 需本人确认",
+      "interactive": true,
+      "action": "申请访问",
+      "prompt": "按 Enter 或点击「申请访问」"
+    },
+    {
+      "id": "identity",
+      "audio": "line-2",
+      "kind": "identity",
+      "chinese": "身份资料确认",
+      "rail": "身份资料确认",
+      "english": "IDENTITY VERIFICATION",
+      "note": "请核对档案信息",
+      "interactive": true,
+      "action": "确认身份",
+      "prompt": "按 Enter 或点击「确认身份」"
+    },
+    {
+      "id": "request",
+      "audio": "line-3",
+      "kind": "request",
+      "chinese": "接收访问需求",
+      "rail": "接收访问需求",
+      "english": "ACCESS REQUEST RECEIVED",
+      "note": "通道已接通 · 需求已登记",
+      "duration": 2200,
+      "auto": true
+    },
+    {
+      "id": "reading",
+      "audio": "line-4",
+      "kind": "reading",
+      "chinese": "开始读取权限",
+      "rail": "开始读取权限",
+      "english": "PERMISSION READ STARTED",
+      "note": "逐项读取本机授权",
+      "duration": 3200,
+      "auto": true
+    },
+    {
+      "id": "verified",
+      "audio": "line-5",
+      "kind": "verified",
+      "chinese": "读取完毕 · 核验通过",
+      "rail": "读取完毕 · 核验",
+      "english": "READ COMPLETE · VERIFIED",
+      "note": "全部授权核验通过",
+      "duration": 2800,
+      "auto": true
+    },
+    {
+      "id": "welcome",
+      "audio": "line-6",
+      "kind": "welcome",
+      "chinese": "欢迎访问 DeepSeek Harness",
+      "rail": "欢迎访问",
+      "english": "WELCOME TO DEEPSEEK HARNESS",
+      "note": "山河无恙 · 星火相传",
+      "duration": 3200,
+      "auto": true
+    }
+  ]
+}

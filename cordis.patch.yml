@@ -1,0 +1,6 @@
+# Bundle layer for dsh-abyss-skin.
+# `name` must match the package name exactly, or the loader skips this row
+# with a warning (the skin then simply never appears).
+- insert:
+    - id: dsh-abyss-skin
+      name: dsh-abyss-skin
