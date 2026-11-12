@@ -11,17 +11,17 @@
 | **VERMILION DAWN** | 红色精神 / 人民殿堂 / 五星礼花 | 六幕交互仪式（约 20s，无启动片） | 静态图 `poster.jpg` |
 | **VELVET MUSE** | 私人画廊 / 多图轮换 / 玫瑰金 | 8s 占位启动 | 多图轮换 |
 
-![NEON GRID 启动画面](docs/preview-neon-boot.png)
+![NEON GRID 启动画面](assets/preview-neon.gif)
 
-![ABYSS 启动画面](docs/preview-boot.png)
+![ABYSS 启动画面](assets/preview-abyss.gif)
 
-![VERMILION DAWN 第一幕「需要访问许可」](docs/preview-vermilion-boot.png)
+![VERMILION DAWN 第一幕「需要访问许可」](assets/preview-vermilion.gif)
 
 ![VERMILION DAWN 第五幕「核验通过」红章](docs/preview-vermilion-rite.png)
 
 ![VERMILION DAWN 进入后的背景](docs/preview-vermilion-bg.png)
 
-![VELVET MUSE 启动画面（占位）](docs/preview-muse-boot.png)
+![VELVET MUSE 启动画面（占位）](assets/preview-muse.gif)
 
 ![皮肤切换器与 NEON 背景](docs/preview-switcher.png)
 
